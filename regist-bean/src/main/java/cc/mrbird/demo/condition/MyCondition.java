@@ -11,6 +11,7 @@ public class MyCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         String osName = context.getEnvironment().getProperty("os.name");
-        return osName != null && osName.contains("Windows");
+        System.out.println("当前操作系统为："+osName);
+        return osName != null && osName.contains("Mac");
     }
 }

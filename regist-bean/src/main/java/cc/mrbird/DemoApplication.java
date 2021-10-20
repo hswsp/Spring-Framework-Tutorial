@@ -1,6 +1,7 @@
 package cc.mrbird;
 
 import cc.mrbird.demo.config.WebConfig;
+import cc.mrbird.demo.domain.User;
 import cc.mrbird.demo.service.CalculateService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.WebApplicationType;
@@ -18,7 +19,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         ConfigurableApplicationContext context1 = new SpringApplicationBuilder(DemoApplication.class)
                 .web(WebApplicationType.NONE)
-                .profiles("java7")
+                .profiles("java8")
                 .run(args);
 
         // 返回 IOC 容器，使用注解配置，传入配置类
@@ -29,10 +30,11 @@ public class DemoApplication {
         // System.out.println(user);
 
         // 查看 User 这个类在 Spring 容器中叫啥玩意
-        // String[] beanNames = context.getBeanNamesForType(User.class);
-        // Arrays.stream(beanNames).forEach(System.out::println);
+//         String[] beanNames = context.getBeanNamesForType(User.class);
+//         Arrays.stream(beanNames).forEach(System.out::println);
 
         // 查看基于注解的 IOC容器中所有组件名称
+        System.out.println("IOC容器中所有组件名称:");
         String[] beanNames = context.getBeanDefinitionNames();
         Arrays.stream(beanNames).forEach(System.out::println);
 

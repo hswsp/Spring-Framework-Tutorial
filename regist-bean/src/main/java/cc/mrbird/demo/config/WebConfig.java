@@ -32,9 +32,9 @@ import org.springframework.stereotype.Service;
 @Import({Hello.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
 public class WebConfig {
 
-    @Bean
-    // @Conditional(MyCondition.class)
-    // @Lazy
+    @Bean("myUser")
+    @Conditional(MyCondition.class)
+    @Lazy
     // @Scope("prototype")
     public User user() {
         System.out.println("往IOC容器中注册user bean");
