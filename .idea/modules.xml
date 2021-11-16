@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spring-framework-tutorial.iml" filepath="$PROJECT_DIR$/.idea/spring-framework-tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../spring-family/Chapter 15/SpringMVC/SpringMVC.iml" filepath="$PROJECT_DIR$/../spring-family/Chapter 15/SpringMVC/SpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringEvent/event-demo.iml" filepath="$PROJECT_DIR$/SpringEvent/event-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lifecycle/life-cycle.iml" filepath="$PROJECT_DIR$/Lifecycle/life-cycle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regist-bean/regist-bean.iml" filepath="$PROJECT_DIR$/regist-bean/regist-bean.iml" />
     </modules>
   </component>
 </project>
